@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 <meta charset="UTF-16">
+<link href="css/design.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 <title>Interactive Novel</title>
 <script src="js/jquery.js"></script>
@@ -70,8 +72,30 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-<div id="wrapper"><div id="titel"><h1>Dies ist ein Testlauf für die interaktive Novelle</h1></div>
-<div id="text1"><p>Your name is SAM and it's your 20th birthday today!! Yay!!
+<!-- Note 
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div> -->
+
+<!-- Header -->
+<div class="header">
+  <h1>Name of the individual graphic novel</h1>
+  
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  
+  <div class="main">
+    <div id="text1"><p>Your name is SAM and it's your 20th birthday today!! Yay!!
 You just came back home after celebrating the day of your birth together with your siblings .
 It was fun but you're a little tired (because you refused to go to bed even tho Warren told you to, you stubborn loser) so you decide to go to bed and watch some cooking ASMR videos (the ones by the egg guy. God, you LOVE this man and his silly egg jokes) but what's that?
 It appears someone snuck into your room while you were gone and left something for you on your little table!
@@ -95,11 +119,11 @@ Inside the ENVELOPE is a LETTER and a NOTE.
 </br>
 Which will you read first?
 </p></div>
-<div id="image1"><img src="images/sammy_sprite.png"></div>
-<div id="image2"><img src="images/hazel_close_up.png"></div>
-<div id="image3"><img src="images/bed_close_up.png"></div>
-<div id="image4"><img src="images/sam_room_finished.png"></div>
-<div id="image5"><img src="images/table_close_up.png"></div>
+<div class="fakeimg" id="image1"><img src="images/sammy_sprite.png"></div>
+<div class="fakeimg" id="image2"><img src="images/hazel_close_up.png"></div>
+<div class="fakeimg" id="image3"><img src="images/bed_close_up.png"></div>
+<div class="fakeimg" id="image4"><img src="images/sam_room_finished.png"></div>
+<div class="fakeimg" id="image5"><img src="images/table_close_up.png"></div>
 
 <div id="menu">
 <button id="btn1">Check table</Button>
@@ -110,5 +134,12 @@ Which will you read first?
 <button id="btn6">Check photo</Button>
 </div>
 </div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
 </body>
 </html>
